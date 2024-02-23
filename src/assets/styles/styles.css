@@ -102,3 +102,35 @@ li:hover {
     transition: ease-out 0.1s;
     cursor: pointer;
 }
+
+@media all and (orientation:portrait) {
+    #pfp {
+        border-radius: 100%;
+        width: 330px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    #sub {
+        font-size: 28px;
+        color: #bbbbbb;
+    }
+    li {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 80%;
+        height: 140px;
+    }
+    .sectionname {
+        margin-top: 80px;
+        font-size: 48px;
+    }
+    a{
+        font-size: 32px;
+    }
+    .contact{
+        width: 60px;
+        height: 40px;
+    }
+
+}
