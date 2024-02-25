@@ -69,10 +69,11 @@ li {
     height: 70px;
     border-radius: 0.5vw;
     transition: ease-out 0.1s;
+    text-align: center;
     
 }
 
-a{
+#link-added{
     display: flex;
     align-items: center;
     justify-content: center;

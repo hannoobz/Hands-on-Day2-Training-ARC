@@ -26,8 +26,8 @@ const displayLinks = (arr,keys) => {
         const text = object[0];
         const link = object[1];
         return `
-        <li style="background-image: url('${img}')">
-            <a href="${link}" target='_blank'>${text}</a>
+        <li>
+            <a href="${link}" target='_blank' id="link-added">${text}</a>
         </li>
         `
     }).join("");
