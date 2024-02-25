@@ -19,9 +19,9 @@ const linkUsedArr = Object.values(linkUsed);
 const sectionName = Object.keys(linkUsed);
 
 const displayLinks = (arr,keys) => {
-    display.innerHTML += `<h2 class="sectionname">${keys}</h2>
-    `
-    display.innerHTML += `<ul>`
+    let stringReplace = "";
+    stringReplace += `<h2 class="sectionname">${keys}</h2>`;
+    stringReplace += `<ul>`;
     let displayLink = arr.map((object) => {
         const text = object[0];
         const link = object[1];
@@ -31,10 +31,13 @@ const displayLinks = (arr,keys) => {
         </li>
         `
     }).join("");
-    display.innerHTML += displayLink;
-    display.innerHTML += `</ul>`
+    stringReplace += displayLink;
+    stringReplace += `</ul>`;
+    display.innerHTML += stringReplace;
+    
 }
 
 for(let i=0;i<linkUsedArr.length;i++){
     displayLinks(linkUsedArr[i],sectionName[i]);
+    
 }
