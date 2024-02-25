@@ -26,8 +26,8 @@ const displayLinks = (arr,keys) => {
         const text = object[0];
         const link = object[1];
         return `
-        <li  onclick="window.open('${link}', '_blank');">
-            <a>${text}</a>
+        <li style="background-image: url('${img}')">
+            <a href="${link}" target='_blank'>${text}</a>
         </li>
         `
     }).join("");
